@@ -1,9 +1,16 @@
 {
   "name": "avidbots",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
   "author": "Lucas <lucascavalcante@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "http": "^0.0.0",
+    "nodemon": "^1.18.4",
+    "socket.io": "^2.1.1"
   }
 }
-
