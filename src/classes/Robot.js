@@ -26,10 +26,6 @@ class Robot
                 for(let i = 0; i < this.matrix.length; i++) {
                     console.log(this.matrix[i].join(''));
                 }
-                // io.emit('finish', {
-                //     timeDuration: timeDuration*0.001,
-                //     msg: "Task complete."
-                // })
                 return;
             }
 
@@ -53,7 +49,6 @@ class Robot
                 this.path.push('right');
                 return;
             }
-            // backward
             this.walk(this.path.pop());
         }, 200);
     }
